@@ -33,10 +33,10 @@
       <nav class="nav">
         <ul class="nav-links">
           <li>
-            <a href="#Reservar-una-mesa" class="nav-link">Reservar una mesa</a>
+            <a href="#book-a-table" class="nav-link">Reservar una mesa</a>
           </li>
           <!-- 2 -->
-          <li><a href="#Contactos" class="nav-link">Contactos</a></li>
+          <li><a href="#contacts" class="nav-link">Contactos</a></li>
           <!-- 3 -->
         </ul>
       </nav>
@@ -79,8 +79,117 @@
       </div>
     </header>
 
-    <main class="content"></main>
+    <main class="content">
+      <form class="reservation-form" action="#" method="get">
+        <div class="fieldset">
+          <h2 id="book-a-table" class="reservation-title">Reservar una mesa</h2>
+          <label for="name" class="form-label first-label">Nombre *</label>
+          <!-- first-label class prevents it from having a top margin, setting it to 0 -->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="form-input"
+            placeholder="Nombre"
+          />
 
-    <footer class="footer"></footer>
+          <label for="guests" class="form-label">Número de comensales *</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="8"
+            required
+            class="form-input"
+            placeholder="1-8"
+          />
+
+          <label for="datetime" class="form-label">Fecha y hora *</label>
+          <input
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            required
+            class="form-input"
+          />
+
+          <label for="email" class="form-label">tu correo electrónico *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="form-input"
+            placeholder="email@email.com"
+          />
+
+          <button type="submit" class="button-content-reservation">
+            Reservar
+          </button>
+
+          <div class="terms-container">
+            <input
+              id="terms"
+              type="checkbox"
+              value="terms"
+              name="terms"
+              class="terms-checkbox"
+            />
+            <label for="terms" class="terms-label"
+              >Acepto los términos de uso</label
+            >
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="circle"></div>
+
+      <div class="social-media-box">
+        <img
+          src="./images/logo_coffeeshop_light.svg"
+          alt="white version of triple espresso's logo"
+          class="footer-logo"
+        />
+
+        <div class="social-media-block">
+          <p id="contacts" class="social-media-title">Redes sociales</p>
+
+          <nav class="nav">
+            <ul class="nav-links-footer">
+              <li class="list-element">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="small facebook logo"
+                />
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="nav-link-footer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="list-element">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="small instagram logo"
+                />
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="nav-link-footer"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <p class="copyright">© 2026 Ramon Morales</p>
+      </div>
+    </footer>
   </body>
 </html>

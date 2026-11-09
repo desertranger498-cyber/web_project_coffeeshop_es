@@ -1,6 +1,11 @@
 body,
 ul,
 h1,
+h2,
+label,
+input,
+button,
+footer,
 p {
   margin: 0;
   padding: 0;
@@ -49,6 +54,10 @@ body {
 .nav-link {
   text-decoration: none;
   color: #444444;
+}
+
+.nav-link:hover {
+  color: #ff976b;
 }
 
 .header-title {
@@ -113,4 +122,196 @@ body {
   position: absolute;
   bottom: 40px;
   right: 80px;
+}
+/* --------------------------------------- CONTENT --------------------------------------- */
+
+.content {
+  background-color: #ffd6c5;
+  background-image: url("../images/background_reservation.svg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  color: #000000;
+  z-index: 1;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.reservation-title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin-bottom: 80px;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 385px;
+  height: 100%;
+  margin-bottom: 120px;
+}
+
+.form-label {
+  margin-top: 32px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.first-label {
+  margin-top: 0px;
+}
+
+.form-input {
+  height: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #838383;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.button-content-reservation {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #e96e3a;
+  border: none;
+  height: 60px;
+}
+
+.button-content-reservation:hover {
+  opacity: 70%;
+}
+
+.terms-container {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-checkbox {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  margin-right: 12px;
+  background: white;
+  border: 1px solid #4f4f4f;
+}
+
+.terms-checkbox:checked {
+  background-size: cover;
+  background-position: center;
+  background-color: #2a2a2a;
+  background-image: url("../images/check.svg");
+}
+/* --------------------------------------- FOOTER --------------------------------------- */
+
+.footer {
+  overflow: hidden;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d35722;
+  height: auto;
+  position: relative;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.social-media-box {
+  position: relative;
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin-left: 80px;
+  margin-right: 80px;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #e96e3a;
+  position: absolute;
+  top: -128px;
+  left: -44px;
+}
+
+.footer-logo {
+  height: 39px;
+  width: 105px;
+}
+
+.social-media-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.social-media-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav-links-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  list-style: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav-link-footer {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link-footer:hover {
+  color: #ffd6c5;
+}
+
+.list-element img {
+  width: 16px;
+  height: 16px;
+}
+
+.list-element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 19px;
+}
+
+.copyright {
+  margin-top: 108px;
+  flex: 0 0 100%;
+  margin-bottom: 60px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
